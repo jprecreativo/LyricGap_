@@ -12,6 +12,6 @@ public class LyricGap_
      */
     public static void main(String[] args) 
     {
-        GapMaker.makeGaps();
+        System.out.println(GapMaker.makeGaps());
     }
 }

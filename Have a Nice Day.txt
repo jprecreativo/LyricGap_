@@ -1,0 +1,53 @@
+﻿"Why, you wanna tell me how to live my life?\n" +
+                                 "Who, are you to tell me if it's black or white?\n" +
+                                 "Mama, can you hear me? try to understand\n" +
+                                 "Is innocence the difference between a boy and a man\n" +
+                                 "My daddy lived the lie, it's just the price that he paid\n" +
+                                 "Sacrificed his life, just slavin' away\n" +
+                                 "\n" +
+                                 "Oh, if there's one thing I hang onto\n" +
+                                 "That gets me through the night\n" +
+                                 "I ain't gonna do what I don't want to\n" +
+                                 "I'm gonna live my life\n" +
+                                 "Shining like a diamond, rolling with the dice\n" +
+                                 "Standing on the ledge, I show the wind how to fly\n" +
+                                 "When the world gets in my face\n" +
+                                 "I say, have a nice day\n" +
+                                 "Have a nice day\n" +
+                                 "\n" +
+                                 "Take a look around you; nothing's what it seems\n" +
+                                 "We're living in the broken home of hopes and dreams\n" +
+                                 "Let me be the first to shake a helping hand\n" +
+                                 "Anybody brave enough to take a stand\n" +
+                                 "I've knocked on every door, on every dead end street\n" +
+                                 "Looking for forgiveness\n" +
+                                 "What's left to believe?\n" +
+                                 "\n" +
+                                 "Oh, if there's one thing I hang onto\n" +
+                                 "That gets me through the night\n" +
+                                 "I ain't gonna do what I don't want to\n" +
+                                 "I'm gonna live my life\n" +
+                                 "Shining like a diamond, rolling with the dice\n" +
+                                 "Standing on the ledge, I show the wind how to fly\n" +
+                                 "When the world gets in my face\n" +
+                                 "I say, have a nice day\n" +
+                                 "Have a nice day\n" +
+                                 "\n" +
+                                 "Oh, if there's one thing I hang onto\n" +
+                                 "That gets me through the night\n" +
+                                 "I ain't gonna do what I don't want to\n" +
+                                 "I'm gonna live my life\n" +
+                                 "Shining like a diamond, rolling with the dice\n" +
+                                 "Standing on the ledge, I show the wind how to fly\n" +
+                                 "When the world gets in my face\n" +
+                                 "I say, have a nice day\n" +
+                                 "Have a nice day\n" +
+                                 "Have a nice day\n" +
+                                 "Have a nice day\n" +
+                                 "Have a nice day\n" +
+                                 "\n" +
+                                 "When the world keeps trying, to drag me down\n" +
+                                 "I've gotta raise my hands, gonna stand my ground\n" +
+                                 "Well I say, have a nice day\n" +
+                                 "Have a nice day\n" +
+                                 "Have a nice day";
