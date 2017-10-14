@@ -32,7 +32,7 @@ public abstract class GapMaker
 
         GapMaker.oneGapInEachParagraph(phrases, wordArray);
         
-        while((float) numGaps/numWords < 0.05)
+        while((float) numGaps/numWords < 0.045)
             GapMaker.doMoreGaps(wordArray);
 
         return song;
@@ -47,7 +47,7 @@ public abstract class GapMaker
         Random ran  = new Random(System.currentTimeMillis());
         int posWord = ran.nextInt(wordArray.size());
         String word = wordArray.get(posWord);
-        
+       
         GapMaker.wordToGap(word, wordArray);
     }
     
@@ -160,6 +160,31 @@ public abstract class GapMaker
         stopWords.add("THIS");
         stopWords.add("THESE");
         stopWords.add("AIN'T");
+        stopWords.add("O");
+        stopWords.add("AM");
+        stopWords.add("ONE");
+        stopWords.add("TWO");
+        stopWords.add("THREE");
+        stopWords.add("FOUR");
+        stopWords.add("FIVE");
+        stopWords.add("SIX");
+        stopWords.add("SEVEN");
+        stopWords.add("EIGHT");
+        stopWords.add("NINE");
+        stopWords.add("TEN");
+        stopWords.add("THING");
+        stopWords.add("EVERY");
+        stopWords.add("SOME");
+        stopWords.add("TIME");
+        stopWords.add("ANY");
+        stopWords.add("JUST");
+        stopWords.add("UP");
+        stopWords.add("DOWN");
+        stopWords.add("WHEN");
+        stopWords.add("WHERE");
+        stopWords.add("WHO");
+        stopWords.add("WHY");
+        stopWords.add("WHAT");
     }
     
     /***

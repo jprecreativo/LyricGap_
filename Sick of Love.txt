@@ -1,121 +1,121 @@
-﻿"I've been alone\n" +
-                                 "Waiting at home\n" +
-                                 "I've got not feel the air no more\n" +
-                                 "Sick of love\n" +
-                                 "My heart is sick of love\n" +
-                                 "\n" +
-                                 "I even know\n" +
-                                 "If getting worst\n" +
-                                 "I turn off the radio\n" +
-                                 "Sick of love\n" +
-                                 "My ear is sick of love\n" +
-                                 "\n" +
-                                 "I cannot find\n" +
-                                 "I'm more than blind\n" +
-                                 "Everything I think is wrong\n" +
-                                 "Sick of love\n" +
-                                 "My mind is sick of love\n" +
-                                 "\n" +
-                                 "Who is blamed\n" +
-                                 "With their flame\n" +
-                                 "You can't trust me anymore\n" +
-                                 "Sick of love\n" +
-                                 "We are all sick of love\n" +
-                                 "\n" +
-                                 "I'm gonna fly tonight\n" +
-                                 "I'm taking you\n" +
-                                 "Don't be afraid\n" +
-                                 "I am your Superman\n" +
-                                 "\n" +
-                                 "I'll bring a box\n" +
-                                 "With sugar\n" +
-                                 "To put you in\n" +
-                                 "Let's dance again\n" +
-                                 "The evil game\n" +
-                                 "I'm gonna fly tonight\n" +
-                                 "I'm taking you\n" +
-                                 "Don't be afraid\n" +
-                                 "I am your Superman\n" +
-                                 "\n" +
-                                 "I'll bring a box\n" +
-                                 "With sugar\n" +
-                                 "To put you in\n" +
-                                 "Let's dance again\n" +
-                                 "The evil game\n" +
-                                 "\n" +
-                                 "I'm gonna fly\n" +
-                                 "\n" +
-                                 "I'm gonna fly\n" +
-                                 "\n" +
-                                 "I'm gonna fly\n" +
-                                 "\n" +
-                                 "I'm here alone\n" +
-                                 "Waiting at home\n" +
-                                 "I've got not feel the air no more\n" +
-                                 "Sick of love\n" +
-                                 "My heart is sick of love\n" +
-                                 "\n" +
-                                 "I even know\n" +
-                                 "If getting worst\n" +
-                                 "I turn off the radio\n" +
-                                 "Sick of love\n" +
-                                 "My ear is sick of love\n" +
-                                 "\n" +
-                                 "I cannot find\n" +
-                                 "I'm more than blind\n" +
-                                 "Everything I think is wrong\n" +
-                                 "Sick of love\n" +
-                                 "My mind is sick of love\n" +
-                                 "\n" +
-                                 "Who is blamed\n" +
-                                 "With my flame\n" +
-                                 "You can't trust me anymore\n" +
-                                 "Sick of love\n" +
-                                 "We are all sick of love\n" +
-                                 "\n" +
-                                 "Just feel the music\n" +
-                                 "Don't feel the pain\n" +
-                                 "We are in a river\n" +
-                                 "We are all inside\n" +
-                                 "It's getting better\n" +
-                                 "It's not a game\n" +
-                                 "You want to live it, you want\n" +
-                                 "You must forget\n" +
-                                 "\n" +
-                                 "I'm gonna fly tonight\n" +
-                                 "I'm taking you\n" +
-                                 "Don't be afraid\n" +
-                                 "I am your Superman\n" +
-                                 "\n" +
-                                 "I'll bring a box\n" +
-                                 "With sugar\n" +
-                                 "To put you in\n" +
-                                 "Let's dance again\n" +
-                                 "The evil game\n" +
-                                 "\n" +
-                                 "I'm gonna fly tonight\n" +
-                                 "I'm taking you\n" +
-                                 "Don't be afraid\n" +
-                                 "I am your Superman\n" +
-                                 "\n" +
-                                 "I'll bring a box\n" +
-                                 "With sugar\n" +
-                                 "To put you in\n" +
-                                 "Let's dance again\n" +
-                                 "The evil game\n" +
-                                 "\n" +
-                                 "I'm gonna fly\n" +
-                                 "I'm gonna fly\n" +
-                                 "I'm gonna fly\n" +
-                                 "I'm gonna fly\n" +
-                                 "Let's dance\n" +
-                                 "I'm gonna fly\n" +
-                                 "I'm taking you\n" +
-                                 "I'm gonna fly\n" +
-                                 "I'm taking you\n" +
-                                 "I'm gonna fly\n" +
-                                 "I'm taking you\n" +
-                                 "I'm gonna fly\n" +
-                                 "I'm taking you\n" +
-                                 "\n" +
-                                 "Sick of love!";
+﻿I've been alone
+Waiting at home
+I've got not feel the air no more
+Sick of love
+My heart is sick of love
+
+I even know
+If getting worst
+I turn off the radio
+Sick of love
+My ear is sick of love
+
+I cannot find
+I'm more than blind
+Everything I think is wrong
+Sick of love
+My mind is sick of love
+
+Who is blamed
+With their flame
+You can't trust me anymore
+Sick of love
+We are all sick of love
+
+I'm gonna fly tonight
+I'm taking you
+Don't be afraid
+I am your Superman
+
+I'll bring a box
+With sugar
+To put you in
+Let's dance again
+The evil game
+I'm gonna fly tonight
+I'm taking you
+Don't be afraid
+I am your Superman
+
+I'll bring a box
+With sugar
+To put you in
+Let's dance again
+The evil game
+
+I'm gonna fly
+
+I'm gonna fly
+
+I'm gonna fly
+
+I'm here alone
+Waiting at home
+I've got not feel the air no more
+Sick of love
+My heart is sick of love
+
+I even know
+If getting worst
+I turn off the radio
+Sick of love
+My ear is sick of love
+
+I cannot find
+I'm more than blind
+Everything I think is wrong
+Sick of love
+My mind is sick of love
+
+Who is blamed
+With my flame
+You can't trust me anymore
+Sick of love
+We are all sick of love
+
+Just feel the music
+Don't feel the pain
+We are in a river
+We are all inside
+It's getting better
+It's not a game
+You want to live it, you want
+You must forget
+
+I'm gonna fly tonight
+I'm taking you
+Don't be afraid
+I am your Superman
+
+I'll bring a box
+With sugar
+To put you in
+Let's dance again
+The evil game
+
+I'm gonna fly tonight
+I'm taking you
+Don't be afraid
+I am your Superman
+
+I'll bring a box
+With sugar
+To put you in
+Let's dance again
+The evil game
+
+I'm gonna fly
+I'm gonna fly
+I'm gonna fly
+I'm gonna fly
+Let's dance
+I'm gonna fly
+I'm taking you
+I'm gonna fly
+I'm taking you
+I'm gonna fly
+I'm taking you
+'m gonna fly
+I'm taking you
+
+Sick of love!
