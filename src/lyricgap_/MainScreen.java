@@ -36,6 +36,7 @@ public class MainScreen extends Screen
         bt_MakeGaps = new javax.swing.JButton();
         bt_Clipboard = new javax.swing.JButton();
         bt_CleanFields = new javax.swing.JButton();
+        bt_stopWords = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -73,6 +74,13 @@ public class MainScreen extends Screen
             }
         });
 
+        bt_stopWords.setText("Add stop words");
+        bt_stopWords.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bt_stopWordsActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -81,16 +89,16 @@ public class MainScreen extends Screen
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jScrollPane1)
-                    .addComponent(jScrollPane2))
+                    .addComponent(jScrollPane2)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(bt_stopWords, javax.swing.GroupLayout.DEFAULT_SIZE, 121, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(bt_MakeGaps)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(bt_Clipboard)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(bt_CleanFields)))
                 .addContainerGap())
-            .addGroup(layout.createSequentialGroup()
-                .addGap(34, 34, 34)
-                .addComponent(bt_MakeGaps)
-                .addGap(42, 42, 42)
-                .addComponent(bt_Clipboard)
-                .addGap(44, 44, 44)
-                .addComponent(bt_CleanFields)
-                .addContainerGap(39, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -101,7 +109,8 @@ public class MainScreen extends Screen
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(bt_MakeGaps)
                     .addComponent(bt_Clipboard)
-                    .addComponent(bt_CleanFields))
+                    .addComponent(bt_CleanFields)
+                    .addComponent(bt_stopWords))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 28, Short.MAX_VALUE)
                 .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
@@ -134,6 +143,11 @@ public class MainScreen extends Screen
             ta_OUT.setText(GapMaker.makeGaps());
         }
     }//GEN-LAST:event_bt_MakeGapsActionPerformed
+
+    private void bt_stopWordsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt_stopWordsActionPerformed
+        
+        new StopWords();
+    }//GEN-LAST:event_bt_stopWordsActionPerformed
 
     /**
      * @param args the command line arguments
@@ -174,6 +188,7 @@ public class MainScreen extends Screen
     private javax.swing.JButton bt_CleanFields;
     private javax.swing.JButton bt_Clipboard;
     private javax.swing.JButton bt_MakeGaps;
+    private javax.swing.JButton bt_stopWords;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JTextArea ta_IN;

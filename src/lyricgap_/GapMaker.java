@@ -12,7 +12,7 @@ import java.util.Random;
 public abstract class GapMaker 
 {
     private static int numGaps;
-    private static final ArrayList<String> stopWords = new ArrayList();
+    protected static final ArrayList<String> STOP_WORDS = new ArrayList();
     protected static String song;
     
     /***
@@ -52,139 +52,139 @@ public abstract class GapMaker
     }
     
     /***
-     * Add a list of stop words to the 'stopWords' array.
+     * Add a list of stop words to the 'STOP_WORDS' array.
      */
     private static void addStopWords()
     {
-        stopWords.add("I");
-        stopWords.add("YOU");
-        stopWords.add("IT");
-        stopWords.add("HE");
-        stopWords.add("SHE");
-        stopWords.add("WE");
-        stopWords.add("THEY");
-        stopWords.add("ME");
-        stopWords.add("HIM");
-        stopWords.add("US");
-        stopWords.add("THEM");
-        stopWords.add("MY");
-        stopWords.add("YOUR");
-        stopWords.add("HIS");
-        stopWords.add("HER");
-        stopWords.add("ITS");
-        stopWords.add("OUR");
-        stopWords.add("THEIR");
+        STOP_WORDS.add("I");
+        STOP_WORDS.add("YOU");
+        STOP_WORDS.add("IT");
+        STOP_WORDS.add("HE");
+        STOP_WORDS.add("SHE");
+        STOP_WORDS.add("WE");
+        STOP_WORDS.add("THEY");
+        STOP_WORDS.add("ME");
+        STOP_WORDS.add("HIM");
+        STOP_WORDS.add("US");
+        STOP_WORDS.add("THEM");
+        STOP_WORDS.add("MY");
+        STOP_WORDS.add("YOUR");
+        STOP_WORDS.add("HIS");
+        STOP_WORDS.add("HER");
+        STOP_WORDS.add("ITS");
+        STOP_WORDS.add("OUR");
+        STOP_WORDS.add("THEIR");
         
-        stopWords.add("ON");
-        stopWords.add("IN");
-        stopWords.add("AT");
-        stopWords.add("SINCE");
-        stopWords.add("FOR");
-        stopWords.add("AGO");
-        stopWords.add("BEFORE");
-        stopWords.add("TO");
-        stopWords.add("PAST");
-        stopWords.add("TILL");
-        stopWords.add("UNTIL");
-        stopWords.add("BY");
-        stopWords.add("NEXT");
-        stopWords.add("BESIDE");
-        stopWords.add("UNDER");
-        stopWords.add("BELOW");
-        stopWords.add("OVER");
-        stopWords.add("ABOVE");
-        stopWords.add("ACROSS");
-        stopWords.add("INTO");
-        stopWords.add("TOWARDS");
-        stopWords.add("ONTO");
-        stopWords.add("FROM");
-        stopWords.add("OF");
-        stopWords.add("OFF");
-        stopWords.add("OUT");
+        STOP_WORDS.add("ON");
+        STOP_WORDS.add("IN");
+        STOP_WORDS.add("AT");
+        STOP_WORDS.add("SINCE");
+        STOP_WORDS.add("FOR");
+        STOP_WORDS.add("AGO");
+        STOP_WORDS.add("BEFORE");
+        STOP_WORDS.add("TO");
+        STOP_WORDS.add("PAST");
+        STOP_WORDS.add("TILL");
+        STOP_WORDS.add("UNTIL");
+        STOP_WORDS.add("BY");
+        STOP_WORDS.add("NEXT");
+        STOP_WORDS.add("BESIDE");
+        STOP_WORDS.add("UNDER");
+        STOP_WORDS.add("BELOW");
+        STOP_WORDS.add("OVER");
+        STOP_WORDS.add("ABOVE");
+        STOP_WORDS.add("ACROSS");
+        STOP_WORDS.add("INTO");
+        STOP_WORDS.add("TOWARDS");
+        STOP_WORDS.add("ONTO");
+        STOP_WORDS.add("FROM");
+        STOP_WORDS.add("OF");
+        STOP_WORDS.add("OFF");
+        STOP_WORDS.add("OUT");
         
-        stopWords.add("IF");
-        stopWords.add("THE");
-        stopWords.add("BE");
-        stopWords.add("IS");
-        stopWords.add("ARE");
-        stopWords.add("I'M");
-        stopWords.add("I'VE");
-        stopWords.add("YOU'RE");
-        stopWords.add("HE'S");
-        stopWords.add("SHE'S");
-        stopWords.add("IT'S");
-        stopWords.add("WE'RE");
-        stopWords.add("THEY'RE");
-        stopWords.add("WILL");
-        stopWords.add("I'LL");
-        stopWords.add("YOU'LL");
-        stopWords.add("HE'LL");
-        stopWords.add("SHE'LL");
-        stopWords.add("IT'LL");
-        stopWords.add("WE'LL");
-        stopWords.add("THEY'LL");
-        stopWords.add("WON'T");
-        stopWords.add("DO");
-        stopWords.add("DON'T");
-        stopWords.add("DOES");
-        stopWords.add("DOESN'T");
-        stopWords.add("WAS");
-        stopWords.add("WERE");
-        stopWords.add("HAVE");
-        stopWords.add("HAS");
-        stopWords.add("GONNA");
-        stopWords.add("WANNA");
-        stopWords.add("NOT");
-        stopWords.add("CAN");
-        stopWords.add("CAN'T");
-        stopWords.add("CANNOT");
-        stopWords.add("SHOULD");
-        stopWords.add("MUST");
-        stopWords.add("OUGTH");
-        stopWords.add("SHALL");
-        stopWords.add("AS");
-        stopWords.add("LET'S");
-        stopWords.add("MORE");
-        stopWords.add("LESS");
-        stopWords.add("THAN");
-        stopWords.add("THAT");
-        stopWords.add("NO");
-        stopWords.add("YES");
-        stopWords.add("WITH");
-        stopWords.add("WITHOUT");
-        stopWords.add("OUT");
-        stopWords.add("A");
-        stopWords.add("OR");
-        stopWords.add("AND");
-        stopWords.add("THOSE");
-        stopWords.add("THIS");
-        stopWords.add("THESE");
-        stopWords.add("AIN'T");
-        stopWords.add("O");
-        stopWords.add("AM");
-        stopWords.add("ONE");
-        stopWords.add("TWO");
-        stopWords.add("THREE");
-        stopWords.add("FOUR");
-        stopWords.add("FIVE");
-        stopWords.add("SIX");
-        stopWords.add("SEVEN");
-        stopWords.add("EIGHT");
-        stopWords.add("NINE");
-        stopWords.add("TEN");
-        stopWords.add("THING");
-        stopWords.add("EVERY");
-        stopWords.add("SOME");
-        stopWords.add("TIME");
-        stopWords.add("ANY");
-        stopWords.add("JUST");
-        stopWords.add("UP");
-        stopWords.add("DOWN");
-        stopWords.add("WHEN");
-        stopWords.add("WHERE");
-        stopWords.add("WHO");
-        stopWords.add("WHY");
-        stopWords.add("WHAT");
+        STOP_WORDS.add("IF");
+        STOP_WORDS.add("THE");
+        STOP_WORDS.add("BE");
+        STOP_WORDS.add("IS");
+        STOP_WORDS.add("ARE");
+        STOP_WORDS.add("I'M");
+        STOP_WORDS.add("I'VE");
+        STOP_WORDS.add("YOU'RE");
+        STOP_WORDS.add("HE'S");
+        STOP_WORDS.add("SHE'S");
+        STOP_WORDS.add("IT'S");
+        STOP_WORDS.add("WE'RE");
+        STOP_WORDS.add("THEY'RE");
+        STOP_WORDS.add("WILL");
+        STOP_WORDS.add("I'LL");
+        STOP_WORDS.add("YOU'LL");
+        STOP_WORDS.add("HE'LL");
+        STOP_WORDS.add("SHE'LL");
+        STOP_WORDS.add("IT'LL");
+        STOP_WORDS.add("WE'LL");
+        STOP_WORDS.add("THEY'LL");
+        STOP_WORDS.add("WON'T");
+        STOP_WORDS.add("DO");
+        STOP_WORDS.add("DON'T");
+        STOP_WORDS.add("DOES");
+        STOP_WORDS.add("DOESN'T");
+        STOP_WORDS.add("WAS");
+        STOP_WORDS.add("WERE");
+        STOP_WORDS.add("HAVE");
+        STOP_WORDS.add("HAS");
+        STOP_WORDS.add("GONNA");
+        STOP_WORDS.add("WANNA");
+        STOP_WORDS.add("NOT");
+        STOP_WORDS.add("CAN");
+        STOP_WORDS.add("CAN'T");
+        STOP_WORDS.add("CANNOT");
+        STOP_WORDS.add("SHOULD");
+        STOP_WORDS.add("MUST");
+        STOP_WORDS.add("OUGTH");
+        STOP_WORDS.add("SHALL");
+        STOP_WORDS.add("AS");
+        STOP_WORDS.add("LET'S");
+        STOP_WORDS.add("MORE");
+        STOP_WORDS.add("LESS");
+        STOP_WORDS.add("THAN");
+        STOP_WORDS.add("THAT");
+        STOP_WORDS.add("NO");
+        STOP_WORDS.add("YES");
+        STOP_WORDS.add("WITH");
+        STOP_WORDS.add("WITHOUT");
+        STOP_WORDS.add("OUT");
+        STOP_WORDS.add("A");
+        STOP_WORDS.add("OR");
+        STOP_WORDS.add("AND");
+        STOP_WORDS.add("THOSE");
+        STOP_WORDS.add("THIS");
+        STOP_WORDS.add("THESE");
+        STOP_WORDS.add("AIN'T");
+        STOP_WORDS.add("O");
+        STOP_WORDS.add("AM");
+        STOP_WORDS.add("ONE");
+        STOP_WORDS.add("TWO");
+        STOP_WORDS.add("THREE");
+        STOP_WORDS.add("FOUR");
+        STOP_WORDS.add("FIVE");
+        STOP_WORDS.add("SIX");
+        STOP_WORDS.add("SEVEN");
+        STOP_WORDS.add("EIGHT");
+        STOP_WORDS.add("NINE");
+        STOP_WORDS.add("TEN");
+        STOP_WORDS.add("THING");
+        STOP_WORDS.add("EVERY");
+        STOP_WORDS.add("SOME");
+        STOP_WORDS.add("TIME");
+        STOP_WORDS.add("ANY");
+        STOP_WORDS.add("JUST");
+        STOP_WORDS.add("UP");
+        STOP_WORDS.add("DOWN");
+        STOP_WORDS.add("WHEN");
+        STOP_WORDS.add("WHERE");
+        STOP_WORDS.add("WHO");
+        STOP_WORDS.add("WHY");
+        STOP_WORDS.add("WHAT");
     }
     
     /***
@@ -229,17 +229,20 @@ public abstract class GapMaker
         
         // Make a gap in the last paragraph:
        
-        boolean gap;
+        String word;
+        ArrayList<String> lastParagraphWords = new ArrayList();
+        int indexLastParagraph = GapMaker.findLineBreaks(phrases).get(findLineBreaks(phrases).size() - 1);
+        
+        for(int i = indexLastParagraph + 1; i < phrases.length; i++)
+            lastParagraphWords.addAll(Arrays.asList(phrases[i].split(" ")));
         
         do
         {
             Random ran = new Random(System.currentTimeMillis());
-            String[] phraseWords = phrases[phrases.length - 1].split(" ");
-            String word = phraseWords[ran.nextInt(phraseWords.length)];
             
-            gap = GapMaker.wordToGap(word, wordArray);
+            word = lastParagraphWords.get(ran.nextInt(lastParagraphWords.size()));
         }
-        while(!gap);
+        while(!GapMaker.wordToGap(word, wordArray));
     }
     
     /***
@@ -256,7 +259,7 @@ public abstract class GapMaker
         for(int i = 0; i < word.length(); i++)
             gap += "_";
         
-        if(!stopWords.contains(word))
+        if(!STOP_WORDS.contains(word))
         {
             song = song.replaceAll(word, gap);
             numGaps++;

@@ -1,21 +1,19 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package lyricgap_;
 
 /**
  *
  * @author jprecreativo
  */
-public class StopWords extends javax.swing.JFrame {
-
+public class StopWords extends Screen
+{
     /**
      * Creates new form StopWords
      */
-    public StopWords() {
+    public StopWords() 
+    {
         initComponents();
+        
+        super.inicialize(this.getWidth(), this.getHeight(), "Stop words");
     }
 
     /**
@@ -27,21 +25,56 @@ public class StopWords extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        jScrollPane1 = new javax.swing.JScrollPane();
+        ta_Words = new javax.swing.JTextArea();
+        bt_addWords = new javax.swing.JButton();
+
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+
+        ta_Words.setColumns(20);
+        ta_Words.setRows(5);
+        jScrollPane1.setViewportView(ta_Words);
+
+        bt_addWords.setText("Add words");
+        bt_addWords.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bt_addWordsActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jScrollPane1)
+                .addContainerGap())
+            .addGroup(layout.createSequentialGroup()
+                .addGap(156, 156, 156)
+                .addComponent(bt_addWords)
+                .addContainerGap(161, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(bt_addWords)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void bt_addWordsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt_addWordsActionPerformed
+        
+        String[] stopWords = ta_Words.getText().split("\n");
+        
+        for(String stopWord : stopWords)
+            GapMaker.STOP_WORDS.add(stopWord);
+    }//GEN-LAST:event_bt_addWordsActionPerformed
 
     /**
      * @param args the command line arguments
@@ -79,5 +112,8 @@ public class StopWords extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton bt_addWords;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTextArea ta_Words;
     // End of variables declaration//GEN-END:variables
 }
