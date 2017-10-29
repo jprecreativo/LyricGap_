@@ -14,6 +14,7 @@ public abstract class GapMaker
     private static int numGaps;
     protected static final ArrayList<String> STOP_WORDS = new ArrayList();
     protected static String song;
+    protected static float gaps;
     
     /***
      * It makes the gaps.
@@ -32,7 +33,7 @@ public abstract class GapMaker
 
         GapMaker.oneGapInEachParagraph(phrases, wordArray);
         
-        while((float) numGaps/numWords < 0.045)
+        while((float) numGaps/numWords < gaps)
             GapMaker.doMoreGaps(wordArray);
 
         return song;
